@@ -1,0 +1,106 @@
+@import '../_abstract/variaveis';
+
+@media screen and (max-width: 470px) {
+  .container-header {
+    .title {
+      flex-direction: column-reverse;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      img {
+        @include compri-max(300px, 100%, 300px, 100%);
+      }
+    }
+
+    .description {
+      margin-top: 20px;
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 335px) {
+  .buttons {
+    max-width: 210px;
+  }
+
+  .container-header {
+    .title {
+      h1 {
+        margin-top: 10px;
+        font-size: 1.125rem;
+      }
+
+      img {
+        @include compri-max(220px, 100%, 220px, 100%);
+      }
+    }
+
+    .description {
+      p {
+        font-size: .875rem;
+        margin-top: 30px;
+        max-width: 240px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 255px) {
+  .buttons {
+    max-width: 170px;
+
+    .continues {
+      font-size: 1rem;
+    }
+  }
+
+  .container-header {
+    .title {
+      h1 {
+        margin-top: 40px;
+        font-size: 1rem
+          /* 18px -> 1.125rem */
+      }
+
+      img {
+        @include compri-max(150px, 100%, 150px, 100%);
+      }
+    }
+
+    .description {
+      p {
+        font-size: .800rem;
+        margin-top: 30px;
+        max-width: 210px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 230px) {
+
+  .container-header {
+    .title {
+      h1 {
+        margin-top: 40px;
+        font-size: .8125rem;
+      }
+
+      img {
+        @include compri-max(120px, 100%, 120px, 100%);
+      }
+    }
+
+    .description {
+      p {
+        font-size: .75rem;
+        margin-top: 30px;
+        max-width: 150px;
+      }
+    }
+  }
+}
