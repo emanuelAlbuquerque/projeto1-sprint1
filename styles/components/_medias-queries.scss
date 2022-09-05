@@ -9,18 +9,26 @@
         font-size: 1.5rem;
       }
 
-      img {
-        @include compri-max(300px, 100%, 300px, 100%);
-      }
+
     }
 
     .description {
-      margin-top: 20px;
+      p {
+        margin-top: 20px;
+        font-size: .875rem;
+        max-width: 235px;
+      }
     }
   }
 
-
+  .bookmark {
+    a {
+      width: 11px;
+      height: 11px;
+    }
+  }
 }
+
 
 @media screen and (max-width: 335px) {
   .buttons {
@@ -41,9 +49,9 @@
 
     .description {
       p {
-        font-size: .875rem;
+        font-size: .80rem;
         margin-top: 30px;
-        max-width: 240px;
+        max-width: 225px;
       }
     }
   }
@@ -59,11 +67,13 @@
   }
 
   .container-header {
+
     .title {
+      flex-direction: column;
+
       h1 {
-        margin-top: 40px;
-        font-size: 1rem
-          /* 18px -> 1.125rem */
+        margin-bottom: 40px;
+        font-size: 1rem;
       }
 
       img {
@@ -75,18 +85,17 @@
       p {
         font-size: .800rem;
         margin-top: 30px;
-        max-width: 210px;
+        max-width: 190px;
       }
     }
   }
 }
 
-@media screen and (max-width: 230px) {
+@media screen and (max-width: 215px) {
 
   .container-header {
     .title {
       h1 {
-        margin-top: 40px;
         font-size: .8125rem;
       }
 
