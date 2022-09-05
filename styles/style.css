@@ -1,1 +1,190 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-header {
+  width: 100%;
+}
+.container-header .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-header .title h1 {
+  margin: 0;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.container-header .title img {
+  width: 100%;
+  height: 100%;
+  max-width: 250px;
+  max-height: 250px;
+}
+.container-header .description {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.container-header .description p {
+  font-weight: 400;
+  font-size: 1.125rem;
+  max-width: 300px;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+.main .container-main {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.bookmark {
+  width: 100%;
+  max-width: 80px;
+  display: flex;
+  align-items: center;
+}
+.bookmark a {
+  width: 12px;
+  height: 12px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.bookmark a:not(:last-child) {
+  margin-right: 17px;
+}
+.bookmark .page1,
+.bookmark .page2,
+.bookmark .page3 {
+  background-color: #92E3A9;
+  border: none;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.buttons .continues {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 308px;
+  height: 50px;
+  width: 100%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  background-color: #92E3A9;
+  font-size: 1.125rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.buttons .continues:hover {
+  opacity: 0.8;
+  font-size: 1.0625rem;
+  transition: all 0.5s;
+}
+.buttons .skip {
+  margin-top: 30px;
+  font-size: 1.125rem;
+  color: #92E3A9;
+  text-decoration: none;
+  font-weight: 1.125rem;
+}
+
+@media screen and (max-width: 470px) {
+  .container-header .title {
+    flex-direction: column-reverse;
+  }
+  .container-header .title h1 {
+    font-size: 1.5rem;
+  }
+  .container-header .title img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .container-header .description {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 335px) {
+  .buttons {
+    max-width: 210px;
+  }
+  .container-header .title h1 {
+    margin-top: 10px;
+    font-size: 1.125rem;
+  }
+  .container-header .title img {
+    width: 100%;
+    height: 100%;
+    max-width: 220px;
+    max-height: 220px;
+  }
+  .container-header .description p {
+    font-size: 0.875rem;
+    margin-top: 30px;
+    max-width: 240px;
+  }
+}
+@media screen and (max-width: 255px) {
+  .buttons {
+    max-width: 170px;
+  }
+  .buttons .continues {
+    font-size: 1rem;
+  }
+  .container-header .title h1 {
+    margin-top: 40px;
+    font-size: 1rem;
+  }
+  .container-header .title img {
+    width: 100%;
+    height: 100%;
+    max-width: 150px;
+    max-height: 150px;
+  }
+  .container-header .description p {
+    font-size: 0.8rem;
+    margin-top: 30px;
+    max-width: 210px;
+  }
+}
+@media screen and (max-width: 230px) {
+  .container-header .title h1 {
+    margin-top: 40px;
+    font-size: 0.8125rem;
+  }
+  .container-header .title img {
+    width: 100%;
+    height: 100%;
+    max-width: 120px;
+    max-height: 120px;
+  }
+  .container-header .description p {
+    font-size: 0.75rem;
+    margin-top: 30px;
+    max-width: 150px;
+  }
+}/*# sourceMappingURL=style.css.map */
