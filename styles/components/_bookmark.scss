@@ -1,0 +1,29 @@
+@import '../_abstract/variaveis';
+
+
+.bookmark {
+  width: 100%;
+  max-width: 80px;
+  display: flex;
+  align-items: center;
+
+
+  a {
+    width: 12px;
+    height: 12px;
+    border: 1px solid black;
+    border-radius: 50%;
+
+    &:not(:last-child) {
+      margin-right: 17px;
+    }
+
+  }
+
+  .page1,
+  .page2,
+  .page3 {
+    background-color: $primary-color;
+    border: none;
+  }
+}
