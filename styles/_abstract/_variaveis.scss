@@ -1,0 +1,12 @@
+//Cores
+$primary-color: #92E3A9;
+$font-size-buttons: 1.125rem;
+$font-weight-buttons: 500;
+
+//Funções
+@mixin compri-max($max-width, $width, $max-height, $height) {
+  width: $width;
+  height: $height;
+  max-width: $max-width;
+  max-height: $max-height;
+}
