@@ -14,9 +14,7 @@
 
     .description {
       p {
-        margin-top: 20px;
-        font-size: .875rem;
-        max-width: 235px;
+        @include tamanhoDescription(20px, .875rem, 235px)
       }
     }
   }
@@ -27,6 +25,50 @@
       height: 10px;
     }
   }
+}
+
+@media only screen and (min-width : 601px) and (min-height: 1000px) {
+  .container-header {
+    .title {
+      h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+      }
+
+      img {
+        @include compri-max(350px, 100%, 350px, 100%);
+
+      }
+    }
+
+    .description {
+      p {
+        @include tamanhoDescription(40px, 2rem, 550px);
+        //Margin-top, font-size, max-widht;
+      }
+    }
+  }
+
+  .bookmark {
+    max-width: 100px;
+
+    a {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .buttons {
+    .continues {
+      @include tamanhoContinues(300px, 60px, 1.5rem);
+    }
+
+    .skip {
+      font-size: 1.5rem;
+    }
+  }
+
+
 }
 
 @media only screen and (max-width: 315px) {
@@ -45,9 +87,7 @@
 
     .description {
       p {
-        margin-top: 20px;
-        font-size: .80rem;
-        max-width: 225px;
+        @include tamanhoDescription(20px, .80rem, 255px);
       }
     }
   }
@@ -94,17 +134,13 @@
 
     .description {
       p {
-        margin-top: 20px;
-        font-size: 1rem;
-        max-width: 260px;
+        @include tamanhoDescription(20px, 1rem, 260px)
       }
     }
   }
 
   .bookmark {
-    margin-bottom: 20px;
-    margin-top: 10px;
-    max-width: 62px;
+    @include tamanhoBookmark(20px, 10px, 62px);
 
     a {
       width: 8px;
@@ -114,9 +150,8 @@
 
   .buttons {
     .continues {
-      max-width: 150px;
-      height: 30px;
-      font-size: 0.8rem;
+
+      @include tamanhoContinues(150px, 30px, 0.8rem);
 
       &:hover {
         opacity: 0.8;
@@ -158,9 +193,7 @@
   }
 
   .bookmark {
-    margin-bottom: 20px;
-    margin-top: 10px;
-    max-width: 62px;
+    @include tamanhoBookmark(20px, 10px, 62px);
 
     a {
       width: 8px;
@@ -170,9 +203,7 @@
 
   .buttons {
     .continues {
-      max-width: 150px;
-      height: 30px;
-      font-size: 0.7rem;
+      @include tamanhoContinues(150px, 30px, 0.7rem);
 
       &:hover {
         opacity: 0.8;
@@ -214,9 +245,7 @@
   }
 
   .bookmark {
-    margin-bottom: 20px;
-    margin-top: 10px;
-    max-width: 62px;
+    @include tamanhoBookmark(20px, 10px, 62px);
 
     a {
       width: 8px;
@@ -226,9 +255,7 @@
 
   .buttons {
     .continues {
-      max-width: 150px;
-      height: 30px;
-      font-size: 0.7rem;
+      @include tamanhoContinues(150px, 30px, 0.7rem);
 
       &:hover {
         opacity: 0.8;
