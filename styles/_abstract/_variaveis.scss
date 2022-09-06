@@ -10,3 +10,21 @@ $font-weight-buttons: 500;
   max-width: $max-width;
   max-height: $max-height;
 }
+
+@mixin tamanhoDescription($margin-top, $font-size, $max-width) {
+  margin-top: $margin-top;
+  font-size: $font-size;
+  max-width: $max-width;
+}
+
+@mixin tamanhoBookmark($margin-bottom, $margin-top, $max-width) {
+  margin-bottom: $margin-bottom;
+  margin-top: $margin-top;
+  max-width: $max-width;
+}
+
+@mixin tamanhoContinues($max-width, $height, $font-size) {
+  max-width: $max-width;
+  height: $height;
+  font-size: $font-size;
+}
